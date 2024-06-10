@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+
+    <script>
+        // splice()-->  value ko add karta hai
+        // original array ko change karta hai
+
+        //slice--> Us ke ander se ek tokda nikaal ke deta hai.
+        // original array ko change nai karta hai
+
+        /*
+
+        //splice (initial index ; add karte time kitne delete karna hai ;  values(400,600))
+        let arr1 = [10,20,30,50,60,70];
+        arr1.splice(2,0,400,600);
+        arr1.splice(1,4,400)
+
+
+        // slice--> (start number ; )
+        let arr2 = [10,20,30,50,60,70];
+        console.log(arr2)
+        console.log(arr2.slice(1))  //
+        console.log(arr2.slice(3))  // 50,60,70
+        console.log(arr2.slice(1))  // 50
+        console.log(arr2.slice(2))  // 10,20
+
+        console.log(arr2.slice(1,4))    //20,30,50
+        console.log(arr2.slice(1,5))    //20,30,50,60
+        console.log(arr2.slice(0,6))    //
+        console.log(arr2.slice(3,6))    //
+
+        */
+
+
+         //1) Slice( start, end)
+         var a = ["sanjay" , "Aman" , "Raj" , "Karan"];
+                let  b= a.slice(1,4);        
+                console.log(b)              //(a,r,k)
+                b = a.slice(2)      
+                console.log(b)              // ['Raj', 'Karan']
+                b = a.slice(-3);
+                console.log(b);             // ['Raj', 'Karan']
+    
+    
+
+
+        //2) Splice()
+        
+    </script>
+
+</body>
+</html>

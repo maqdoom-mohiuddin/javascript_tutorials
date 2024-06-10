@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q14</title>
+</head>
+<body>
+    
+
+    <script>
+        //Q14 write a program to create object which have 5 properties and 3 methods
+
+
+        let car = {
+            name : "kia",
+            model : 'latest',
+            color : 'White',
+            price : '5Million',
+            capacity : 7,
+
+            drive : function isDrive(){
+                console.log('true...')
+            },
+            speed: function high(){
+                console.log('Very Fast...')
+            },
+            config : function latest(){
+                console.log('Automatic...')
+            }
+
+        }
+
+        console.log(car)
+        car.drive()
+        car.speed()
+        car.config()
+    </script>
+</body>
+</html>

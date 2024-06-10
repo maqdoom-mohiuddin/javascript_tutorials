@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>My Lab
+  </h1>
+
+
+
+  <script>
+    // let email = prompt('Enter the mail');
+    let email = prompt('Enter the mail.');
+
+
+    if (email == null || email == '') {
+      console.log(`Email Requires....`);
+    } else if (email.includes('@') && email.includes('.')) {
+      console.log('Welcome');
+    } else if (email.includes('@') && !email.includes('.')) {
+      console.log(`Check At Once ${email}`);
+    } else if (!email.includes('@') && !email.includes('.')) {
+      console.log(`${email} requires '@'  & '.' as well`);
+    } else if (email.includes('@') && !email.includes('.')) {
+      console.log(`Check At Once ${email}`);
+    } else if (email.includes('.') && !email.includes('@')) {
+      console.log(`Check At Once ${email}`);
+    } else {
+      console.log(`Hello ${email}`);
+    }
+
+
+
+
+
+  </script>
+  <!-- <script src="./Mylab.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    
+    <h2>Variables Scopes.</h2>
+
+    <p>
+        var -- Global scope kahi bhi use/access kar sakte block me bhi    OR bahr bhi use kar sakte.
+        <br>
+        let -- block level scope not access from outside the block OR memory Occupy nahi karta hai.
+    
+    </p>
+    
+
+
+    
+
+    <script>
+
+        /*var -- Global scope kahi bhi use/access kar sakte  OR bahr bhi use kar sakte*/
+        var x = 30;
+        {
+            var y = 50;
+        }
+        console.log(x)
+        console.log(y)
+        //50
+        //50
+
+
+        /* let -- block level scope not access from outside the block OR memory Occupy nahi karta hai */
+        let a = 70;
+        {
+            let  b = 100;
+        }
+        console.log(a)
+        // console.log(b)
+        // 70
+
+
+
+
+
+
+        //Hoisting--> javascipt behaviiour of moving decleration 
+
+        console.log(q);
+        var q=500;
+        //Undefined.
+
+        // console.log(p);
+        // let p = 300;
+        //Can not be accessed befor initialied.
+
+
+
+        //Constant:-
+        let e = 400;
+        console.log(e);
+        x = 80;
+        console.log(e);
+
+        const pi = 3.14;
+        console.log(pi);
+        pi = 655;
+        console.log(pi);
+    </script>
+</body>
+</html>

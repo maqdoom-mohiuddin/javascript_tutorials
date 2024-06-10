@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    
+    <h1>then, catch</h1>
+
+    <script>
+        let p = new Promise((resolve , reject)=>{
+            let dinnerParty = false;
+            if(dinnerParty){
+                resolve('had dinner')
+            }else{
+                reject('had dal chawal at home')
+            }
+        })
+
+        //complete hone ke bad
+        p.then((data) =>{
+            console.log('in then block');
+            console.log(data);
+        }).then((data) =>{
+            console.log('Chai peeye')
+        }).then((data) =>{
+            console.log('Paan khaye')
+        })
+        //reject hone ke bad
+        .catch((data) =>{
+            console.log('in catch');
+            console.log(data)
+        }).catch((data) =>{
+            console.log('bye')
+        })
+
+        // in then block
+        // had dinner
+        // Chai peeye
+        // Paan khaye
+
+
+    </script>
+</body>
+</html>

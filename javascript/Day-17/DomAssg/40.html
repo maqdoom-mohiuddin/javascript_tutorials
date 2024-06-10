@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40</title>
+</head>
+
+<body>
+
+    <ul>
+        <li class="cl">list-1</li>
+        <li id="first">list-2</li>
+        <li class="cl">list-3</li>
+    </ul>
+
+    <h2>heading 1</h2>
+
+    <div id="div1">
+        <p>Para-1</p>
+        <h2>heading 2</h2>
+        <p>Para-2</p>
+        <h2>heading 3</h2>
+        <p>Para-3</p>
+    </div>
+
+    <script>
+        let div1 = document.getElementById('div1')
+        let elem = div1.getElementsByTagName('h2');
+        // console.log(elem.length);
+        for (let i = 0; i < elem.length; i++) {
+            elem[i].innerHTML = "hello"
+        }
+    </script>
+</body>
+
+</html>

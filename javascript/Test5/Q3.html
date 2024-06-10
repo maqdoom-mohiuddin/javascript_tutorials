@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+</head>
+
+<body>
+
+
+    <script>
+        //Q3 Write a function which takes n number of arguments and return the average of n Numbers. use rest parameter
+
+        function average(...digit) {
+            let total = 0;
+            // for ( num of digit ) {
+            //     total = +num
+            // }
+
+            for(num=1 ; num<digit.length ; num++){
+                total += num
+            }
+            return total/digit.length;
+        }
+        console.log(average(10,2));
+        
+
+        
+    </script>
+</body>
+
+</html>

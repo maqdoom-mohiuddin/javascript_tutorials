@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Attributes</title>
+</head>
+<style>
+    .democlass{
+        color: blue;
+    }
+</style>
+
+<body>
+
+    <div id="d1">
+        <h1 id="d2">Hello inside the h1 tag in html</h1>
+        <p>Hi inside the p tag in html</p>
+        <span id="s1">Hello inside the span in html</span>
+    </div>
+
+    <script>
+        //Adding the class using the setAttribute 
+        document.getElementById('s1').setAttribute('class' , 'democlass');
+        console.log(document.getElementById('s1').getAttribute('class'));
+        console.log(document.getElementById('s1').hasAttribute('class'));
+        document.getElementById('s1').removeAttribute('class');
+
+        
+
+    </script>
+</body>
+
+</html>

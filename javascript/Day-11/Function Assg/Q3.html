@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //3)	Write a function to find out of 3 number which is greatest
+        /*
+        function compare(a, b, c) {
+            if (a > b) {
+                console.log(`${a} is greater than ${b} and ${c}`)
+            } else if (c > b) {
+                console.log(`${c} is greater than ${b} and ${a}`)
+            } else if (a < b) {
+                console.log(`${b} is greater than ${a} and ${c}`)
+            } else {
+                console.log('Equal Numbers')
+            }
+            return a, b, c;
+        }
+
+        let x = +prompt('Enter A first number');
+        let y = +prompt('Enter B second number');
+        let z = +prompt('Enter C third number');
+
+        console.log(compare(x, y, z))
+        */
+
+
+
+        
+        
+
+        function smallestNum(a,b,c){
+            return Math.min(a,b,c)
+        }
+        var num1 = 10
+        var num2 = 20
+        var num3 = 30
+
+        var smallest = smallestNum(num1, num2, num3);
+        console.log ("The smallest number is : "  + smallest)
+
+
+
+        /*
+        
+        function largeNum(a, b, c) {
+            return Math.max(a, b, c)
+        }
+        var num1 = 10
+        var num2 = 20
+        var num3 = 30
+
+        var largest = largeNum(num1, num2, num3);
+        console.log("The largest number is : " + largest);
+
+        */
+    </script>
+</body>
+
+</html>

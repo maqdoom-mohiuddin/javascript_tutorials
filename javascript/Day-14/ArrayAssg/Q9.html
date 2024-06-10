@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+<body>
+    
+
+    <script>
+        /*9)from the given array myColor = ["Red", "Green", "White", "Black"];
+        get the output as below using splice function
+
+    a)myColor = ["Red", "pink","Green", "White", "Black"];
+    b)myColor = ["Red", "pink" "White", "Black"];
+    c)myColor = ["Red", "Green", "White", "Black","pink",'orange'];
+    d)myColor = ["Red","Green", "White", "pink","yello", "Black"];*/
+
+
+    myColor = ["Red", "Green", "White", "Black"];
+    // myColor.splice(1,0,"pink");
+    //a)myColor = ["Red", "pink","Green", "White", "Black"];
+
+
+    
+    // myColor.splice(1,1,"pink");
+    //(4) ['Red', 'pink', 'White', 'Black']
+    
+    // myColor.splice(4,0,"pink" , "Orange");
+    //(6) ['Red', 'Green', 'White', 'Black', 'pink', 'Orange']
+
+
+    myColor.splice(3,0,"pink" , "Orange");
+    //(6) ['Red', 'Green', 'White', 'pink', 'Orange', 'Black']
+
+    
+    console.log(myColor);
+    </script>
+</body>
+</html>

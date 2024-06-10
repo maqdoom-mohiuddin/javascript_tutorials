@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./P6.css">
+    <title>Image Slider</title>
+</head>
+
+<body>
+    
+    <div class="slide-container">
+        <!-- Image-1 -->
+        <div class="slide">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" alt="">
+            <div class="caption">Text-1</div>
+        </div>
+
+        <!-- Image-2 -->
+        <div class="slide">
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg" alt="">
+            <div class="caption">Text-2</div>
+        </div>
+        <!-- Image-3 -->
+        <div class="slide">
+            <img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg" alt="">
+            <div class="caption">Text-3</div>
+        </div>
+        <!-- Image-4 -->
+        <div class="slide">
+            <img src="https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_640.jpg" alt="">
+            <div class="caption">Text-4</div>
+        </div>
+
+        <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+        <span class="arrow next" onclick="controller(1)">&#10095</span>
+    </div>
+
+    <script src="./p6.js"></script>
+
+   
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+
+    <script>
+        let obj = {
+            name : "sam",
+            age : 3,
+            sal : 3000
+        }
+        //Destructuring before es6
+        // console.log(obj.name);
+        // console.log(obj.age);
+        // console.log(obj.sal);
+        // let fnname = obj.name;
+        // let age1 = obj.name
+
+        //Destructuring with es6        
+        let {name : fname, age:age1 , sal : salary} = obj
+        console.log(fname);
+        console.log(age1)
+        
+    </script>
+</body>
+</html>

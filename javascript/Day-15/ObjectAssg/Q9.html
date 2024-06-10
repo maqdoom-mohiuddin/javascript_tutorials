@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        10) Write a JavaScript program to get the volume of a Cylinder using object.
+        Volume of a cylinder : V = πr 2 h
+        where r is the radius and h is the height of the cylinder.
+        */
+
+        let cylinder = {
+            radius : 10,
+            height : 20,
+            pi : 3.14,
+            volume : function(){
+                let vol = this.pi * this.radius * this.radius * this.height;
+                return vol;
+            }
+        }
+        console.log(cylinder);
+        console.log(cylinder.volume())
+
+
+        
+    </script>
+</body>
+</html>

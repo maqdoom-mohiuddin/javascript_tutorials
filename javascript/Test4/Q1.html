@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    
+
+    <script>
+        //Q1 What is let and const? How both are different from var explain with example ?
+
+        /*
+        Let: 
+            -The let keyword contains the block level scope its not      -accessible by the outside the block.
+            -It will not attach to the global object.
+            -Its ES6 Feature.
+            -We cant re-declare the variable again.
+            -we can reassign the value.
+
+        Const:-
+            -It a ES6 features.
+            -We cant re-declare or reassign a value. It is Fixed.
+        
+        Var:-
+            -The var keyword contains the Global  leve scope its      accessible by the whole page the block.
+            -It will attach to the global object.
+            -Its ES5 Feature.
+            -We can re-declare the variable again.
+            -we can reassign the value again.
+        */
+
+
+        let a = 10;
+        {
+            let b= 20;
+            console.log(b)
+        }
+        a=100
+        console.log(a)      //10
+        // console.log(b)  
+        
+        
+        var x = 30;
+        {
+            var y = 40
+        }
+        console.log(x)  //30
+        console.log(y)  //40
+
+
+        const p = 3.14;
+        // const p= 3.10;
+        // p = 200
+        console.log(p)
+
+
+
+
+    </script>
+</body>
+</html>

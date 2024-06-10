@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+
+    <script>
+        let mobile = {
+            company : "Realme",
+            model : "R 7",
+            price : 15000,
+            ram : '6GB',
+            storage : '64GB',
+            color : "Blue",
+            fcamera : '13MP',
+            bcamera : '64MP',
+            talk : function(){
+                console.log('Use For Talking');
+            }
+        }
+
+        console.log(mobile.model);     // dot(.) Notation
+        console.log(mobile['model']);   //Array Nodation
+        console.log(mobile['color']);   //Blue
+
+        console.log(mobile.ram)
+        console.log(mobile.storage);
+        console.log(mobile.color);
+        console.log(mobile.fcamera);
+        console.log(mobile.bcamera);
+        mobile.talk();
+
+
+    </script>
+</body>
+</html>

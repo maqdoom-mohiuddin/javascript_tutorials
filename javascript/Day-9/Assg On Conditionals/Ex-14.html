@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-14</title>
+</head>
+<body>
+    
+
+    <script>
+
+        /*14)write an example of a switch statement
+            that checks the day of the week?*/ 
+
+        let day = +prompt('Enter day number')
+        let txt = "";
+
+        switch(day){
+            case 1:
+                txt = 'Today is Monday';
+                break;
+            case 2:
+                txt = 'Today is Tuesday';
+                break;
+            case 2:
+                txt = 'Today is Wednesday';
+                break;
+            case 3:
+                txt = 'Today is Thursday';
+                break;
+            case 4:
+                txt = 'Today is Friday';
+                break;
+            case 5:
+                txt = 'Today is Saturday';
+                break;
+            case 6:
+                txt = 'Today is sunday';
+                break;
+            default:
+                txt = 'Enter valid day';
+                break;
+        }
+
+        console.log(txt);
+    </script>
+</body>
+</html>

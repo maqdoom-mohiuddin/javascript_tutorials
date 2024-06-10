@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<style>
+    body {
+        background-color: darkcyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #form-container{
+        background-color: antiquewhite;
+        padding: 50px;
+        text-align: center;
+    }
+    h2{
+        margin: 0px 0px 10px 0px;
+    }
+    input{
+        width: 200px;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    input[type='submit']{
+        width: 220px;
+        background-color: darkcyan;
+        border: none;
+        color: wheat;
+        font-weight: bold;
+    }
+    .error{
+        color: red;
+        margin: 0px;
+        text-align: left;
+    }
+</style>
+
+<body>
+
+    <div id="form-container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" id="username" placeholder="Username"><br>
+            <p id="userError" class="error"></p>
+            <input type="password" id="password"placeholder="Password"><br>
+            <p id="passError" class="error"></p>
+            <input type="number"  id="mnumb" placeholder="Mobile Number"> <br>
+            <p id="numError" class="error"></p>
+            <input type="submit" id="">
+        </form>
+    </div>
+
+
+    <script>
+        let username = document.getElementById('username');
+        let password = document.getElementById('password');
+        let number = document.getElementById('mnumb');
+        let flag = 1;
+
+        function validateForm(){
+
+            //UserName
+            if (username.value == ""){
+                document.getElementById('userError').innerHTML = 'User name is empty';
+                flag = 0
+            }else if(username.value.length < 3){
+                document.getElementById('userError').innerHTML = 'User name require minimum 3 char';
+                flag = 0
+            }else{
+                document.getElementById('userError').innerHTML = "" ;
+                flag = 1
+                
+            }
+
+            //Password
+            if(password.value == ""){
+                document.getElementById('passError').innerHTML = 'Password is empty';
+                flag = 0
+            }else if(username.value.length < 6){
+                document.getElementById('passError').innerHTML = 'Password require minimum 6 digit';
+                flag = 0
+            }
+            else{
+            document.getElementById('passError').innerHTML = "" ;
+            flag = 1
+            }
+
+
+            //Number
+            if(number.value == ""){
+                document.getElementById('numError').innerHTML = 'Number is Empty';
+                flag = 0
+            }else if(number.value.length < 10){
+                document.getElementById('numError').innerHTML = 'Number requires minimum 10 digit';
+                flag = 0
+            }else{
+                document.getElementById('numError').innerHTML = "";
+                flag = 1
+            }
+            if(flag){
+                return true
+            }else{
+                return false 
+            }
+        }
+    </script>
+</body>
+
+</html>

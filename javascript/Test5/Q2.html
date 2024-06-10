@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<style>
+    
+</style>
+<body>
+    
+    <table border="1px">
+        <tr>
+            <th>x</th>
+            <th>y</th>
+            <th>x*y</th>
+        </tr>
+    </table>
+
+    <script>
+        //Q2 write a program using for loop to display table of 9 as below.
+
+
+
+        let table = document.querySelector('table');
+        for(i=1; i<=10; i++){
+        // console.log(`${number} x ${i} = ${number * i}`);
+
+        let row = table.insertRow();
+        let cell1 = row.insertCell(0)
+        let cell2 = row.insertCell(1)
+        let cell3 = row.insertCell(2)
+
+        cell1.innerHTML = `${i}`;
+        cell2.innerHTML = '9';
+        cell3.innerHTML = 9*i;
+
+       }
+    </script>
+</body>
+</html>

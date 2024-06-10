@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <h1 class="c1">Hello</h1>
+    <div id="d1" class="c1">My Div</div>
+    <p id="ptag">good Morning</p>
+    <h1 name="test">How are YOu</h1>
+    <h1 name="test">How</h1>
+    <h1>Feeling Good</h1>
+    <script>
+        console.log(document)
+        console.log(document.body)
+
+    //    let x = document.getElementById("ptag");
+    //    console.log(x)
+
+       document.getElementById("ptag").innerHTML = "Good Evining";
+       document.getElementById("ptag").style.color = 'red';
+       document.getElementById('d1').style.height = '100px';
+
+
+       let h1tags =  document.getElementsByTagName('h1')
+       console.log(h1tags);
+       for(i=0 ; i<h1tags.length ; i++){
+        h1tags[i].style.color = 'red'
+       }
+    
+
+      let classc1 = document.getElementsByClassName('c1')
+      console.log(classc1);
+      for(j=0 ; j<classc1.length ; j++){
+        classc1[j].style.color = 'blue'
+      }
+
+      let testTag = document.getElementsByName('test');
+      testTag[0].innerHTML = 'hiiiiiiiiiiii',
+      testTag[1].innerHTML = 'byyyyyyyyyyyyy'
+
+
+      
+    </script>
+</body>
+</html>

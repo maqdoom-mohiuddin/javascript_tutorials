@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Practice</title>
+</head>
+
+<body>
+  <h2>My Practice</h2>
+
+
+  <script>
+
+
+    // creating Object Constructor Functions (before es6)
+    function newemp(id, name, sal) {
+      this.id = id;
+      this.name = name;
+      this.sal = sal;
+      this.msg = () =>{
+        console.log('Before ES6...')
+      }
+    }
+    let emp1 = new newemp(1, "aman", 2000);
+    console.log(emp1.name);     //aman
+    emp1.msg();                 //Before ES6...
+
+
+
+
+
+    //Creating constructor function using class component (in es6)
+    class std {
+      constructor(id, name, sal) {
+        this.id = id;
+        this.name = name;
+        this.sal = sal;
+      }
+      sayHi() {
+        console.log('In ES6..')
+      }
+
+    }
+    let std1 = new std(1, "aman", 2000)
+    let std2 = new std(2, "ram", 3000)
+    console.log(std1);
+    console.log(std1.id);       //1
+    std1.sayHi()                //In ES6..
+  </script>
+</body>
+
+</html>

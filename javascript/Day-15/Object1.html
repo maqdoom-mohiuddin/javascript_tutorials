@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obejct-1</title>
+</head>
+<body>
+    
+    <h2>Tut On Object</h2>
+
+    <script>
+
+        //Creating the Car Object
+
+        let car = {
+            name : "Carnival",
+            brand : "Kia",
+            price : "10 Million",
+            color : "White",
+            model : 2020,
+            carAction : function (){
+                console.log("car")
+            }
+        }
+        console.log(car)
+        console.log(car.name);
+        console.log(car.price);
+
+        //Creating the Chair Object
+        let chair = {
+            name : "mychair",
+            color: "brown",
+            price : "RS:400",
+            height : "2 Fit",
+            weigth : "2kg",
+            chairAction : function(){
+                console.log('Comfort')
+            }
+        }
+        console.log(chair);
+        console.log(chair.name)
+
+
+        //Creating student Object
+        let student ={
+            first_Name : "Rj",
+            Last_Name  : "Kumar",
+            class : "Bachlor",
+            address : "India",
+            Work : function(){
+                console.log('Study');
+            }
+        }
+        console.log(student);
+
+
+        //Creating Employee Object
+        let Emp ={
+            first_Name : "Elon",
+            Last_Name  : "Musk",
+            class : "Maters",
+            address : "USA",
+            Work : function(){
+                console.log('Twitter Inventer');
+            }
+        }
+        console.log(Emp);
+        console.log(Emp.first_Name);
+        Emp.Work()
+    </script>
+</body>
+</html>

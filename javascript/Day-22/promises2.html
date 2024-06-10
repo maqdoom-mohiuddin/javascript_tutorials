@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promisess</title>
+</head>
+
+<body>
+
+    <h1>Promisess</h1>
+
+    <script>
+        /*
+        Function ke ander , function ke ander , function ke ander dosre function ko call karre to use callback hell kahte hai. Ab is ko manage karna bahot problem ho raha tha. to is ko overcome karne ke liye promises ka concept aaya.
+
+        Promise : 
+            Pending, 
+            Resolce, 
+            Reject
+
+        */
+
+        let p = new Promise((resolve , reject)=>{
+            let dinnerParty = false;
+            if(dinnerParty){
+                resolve('had dinner')
+            }else{
+                reject('had dal chawal at home')
+            }
+        })
+
+        //complete hone ke bad
+        p.then((data) =>{
+            console.log('in then block');
+            console.log(data);
+        })
+        //reject hone ke bad
+        .catch((data) =>{
+            console.log('in catch');
+            console.log(data)
+        })
+
+        //in catch
+        //had dal chawal at home
+    </script>
+</body>
+
+</html>

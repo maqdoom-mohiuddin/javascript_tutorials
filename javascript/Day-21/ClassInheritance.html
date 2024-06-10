@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance</title>
+</head>
+<body>
+    <h1>Class Inheritance</h1>
+
+
+    <script>
+
+        //Creating Human class Constructor.
+        class Human{
+            constructor(legs){
+                this.legs = legs
+            }
+        }
+
+        //Creating Person class Constructor.
+        class Person extends Human{
+            constructor(firstName , lastName , age , legs){
+                super(legs)
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+            }
+        }
+
+        //Creating Objests;
+        let p1 = new Person ('Elon' , 'Musk' , 40 , 2);
+        console.log(p1.firstName)       //elon
+        console.log(p1.lastName)        //musk
+        console.log(p1.age);            //40
+        console.log(p1.legs);           //2
+
+    </script>
+</body>
+</html>

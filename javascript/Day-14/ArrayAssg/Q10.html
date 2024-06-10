@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+</head>
+
+<body>
+
+
+    <script>
+        /*
+        10)from the given array myColor = ["Red", "Green", "White", "Black"];
+        get the output as below using slice function
+        ["Green", "White", "Black"]
+        ["White", "Black"]
+        ["Red", "Green"]
+        [ "White"]
+        ["Black"]
+        ["Green"]
+        ["Red"]
+        */
+
+
+        const myColor = ["Red", "Green", "White", "Black"];
+        let myslice = myColor.slice(1);
+        console.log(myslice);
+        //(3) ['Green', 'White', 'Black']
+
+
+        myslice = myColor.slice(2);
+        console.log(myslice);
+        //(2) ['White', 'Black']
+
+        myslice= myColor.slice(3);
+        console.log(myslice);
+        //['Black']
+
+        myslice= myColor.slice(1,2);
+        console.log(myslice);
+        //['Green']
+        
+        myslice= myColor.slice(2,3);
+        console.log(myslice);
+        //['White']
+        
+        myslice= myColor.slice(0,1);
+        console.log(myslice);
+        //['Red']
+       
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

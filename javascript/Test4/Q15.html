@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q15</title>
+</head>
+<body>
+    
+
+    <script>
+        //Q15 Explain promise with example
+
+        let p = new Promise((resolve, reject) =>{
+            let carPurches = true;
+            if(carPurches){
+                resolve('Kia Car....')
+            }else{
+                reject('Suzuki Bike...')
+            }
+        })
+
+        p.then((data) =>{
+            console.log(data);
+            console.log('Carnival...');
+        }).then((data) =>{
+            console.log('Seven Seater..');
+        })
+
+        .catch((data) =>{
+            console.log(data);
+            console.log('Gixxer Bike...');
+        })
+
+        .finally((data) =>{
+            console.log('Congratulations...');
+        })
+    </script>
+</body>
+</html>

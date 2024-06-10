@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    
+    <h1>The key down event</h1>
+    <input type="text" onkeydown="myFunc()">
+
+    <button id="btn">Click Me</button>
+
+    <p id="demo"></p>
+    <script>
+        function myFunc(){
+            document.getElementById('demo').innerHTML = 'You press a deon key'
+        }
+
+        // addEventListener
+        function test(){
+            alert('Alert You click Me!')
+        }
+        document.getElementById('btn').addEventListener('click' , test)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>46</title>
+</head>
+<body>
+    
+    <ul id="list">
+        <!-- 1 -->
+        <li>list-1</li>
+        <!-- 2 -->
+        <li>list-2</li>
+        <!-- 3 -->
+        <li>list-3</li>
+        <!-- 4 -->
+        <li>list-4</li>
+        <!-- 5 -->
+    </ul>
+
+
+    <script>
+        let list1 = document.getElementById('list');    //parent
+
+        let item = document.createElement('li');
+        item.textContent = 'new list 5';
+
+        // let pos = list1.firstElementChild;       //1
+        // let pos = list1.firstElementChild.nextElementSibling;       //2
+        let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;       //3
+        list1.insertBefore(item, pos)
+
+
+        let  parent = document.body
+        let elem = document.createElement('h2');
+        elem.textContent = 'this is new element';
+
+        let list = document.getElementById('list');
+        parent.insertBefore(elem , list)
+    </script>
+
+</body>
+</html>

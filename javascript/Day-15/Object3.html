@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object3</title>
+</head>
+<body>
+    
+    <h2>    creating Object Constructor Functions</h2>
+
+    <script>
+
+        //Four methods to create an  object
+        let talkfunc= function(){
+            console.log('Use fot Talking');
+        }
+
+        //Object Literal
+        let mobile = {
+            fcamera : '15px',
+            bcamera : '30px',
+            talk:talkfunc
+
+        }
+        mobile.talk()
+
+
+        //Empty Object comes under the literal
+        let emp={};
+        emp.id = 1424;
+        emp.name = "Raj";
+        emp.salary = 40000;
+
+
+        // With the help of new keyword
+        let emp2 = new Object();
+        emp2.id = 1191;
+        emp2.name = 'Yesh';
+
+
+
+        // creating Object Constructor Functions
+        function newemp(id,name,sal){
+                this.id = id;
+                this.name = name;
+                this.sal = sal;
+        }
+        let emp1 = new newemp(1,"aman" , 2000)
+        // let emp2 = new newemp(1,"karan" , 3000)
+
+
+
+        //Creating constructor function using class component
+        class std{
+            constructor (id,name,sal){
+                this.id = id;
+                this.name = name;
+                this.sal = sal;
+            }
+        }
+         let std1 = new std (1,"aman" , 2000)
+         let std2 = new std (2,"ram" , 3000)
+
+
+
+         let mycar = [{color: "red"} , {color : "blue"}]
+         console.log(mycar[0])
+         console.log(mycar[1])
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-3</title>
+</head>
+
+<body>
+
+    <h2>Array</h2>
+    <script>
+
+        //There are four ways to create an Array are as follows
+
+
+        // i)
+        const cars1 = new Array('Kia', 'bmw', 'mg');
+        console.log(cars1);
+        //(3) ['Kia', 'bmw', 'mg']
+
+
+        // ii)
+        const cars2 = new Array();
+        cars2[0] = 'MG';
+        cars2[1] = 'Hector';
+        cars2[2] = 'Gloster';
+        cars2[3] = 'Hector+';
+        console.log(cars2);
+        //(4) ['MG', 'Hector', 'Gloster', 'Hector+']
+        cars2.pop();
+        cars2.shift();
+        console.log(cars2)
+        //(2) ['Hector', 'Gloster']
+
+
+
+        // iii)
+        const cars3 = [];
+        cars3[0] = 'MG';
+        cars3[1] = 'Hector';
+        cars3[2] = 'Gloster';
+        cars3[3] = 'Hector+';
+        console.log(cars3);
+        //(4) ['MG', 'Hector', 'Gloster', 'Hector+']
+        cars3.sort();
+        console.log(cars3);
+        //(4) ['Gloster', 'Hector', 'Hector+', 'MG']
+
+
+
+        //iV)
+        const bike = ['Honda', 'Hero', 'Suzuki'];
+        console.log(bike)
+        //(3) ['Honda', 'Hero', 'Suzuki']
+
+        bike.push('FZ');
+        console.log(bike);
+        // (4) ['Honda', 'Hero', 'Suzuki', 'FZ']
+        bike.unshift('TVS');
+        console.log(bike)
+        //(5) ['TVS', 'Honda', 'Hero', 'Suzuki', 'FZ']
+
+
+
+        const fruits = ["banana", "orange", "apple", "mango"];
+        let size = fruits.length;
+        console.log(size);
+        //4
+
+
+        //Accessing  Last Element
+        let fruit = fruits[fruits.length - 1];
+        console.log(fruit);
+        //mango
+
+        for (frt of fruits) {
+            console.log(frt)
+        }
+
+
+
+        //Empty Array:
+        const person = [];
+        person["firstName"] = "John";
+        person["lastName"] = "Doe";
+        person["age"] = 46;
+        console.log(person);
+        //[firstName: 'John', lastName: 'Doe', age: 46]
+    </script>
+</body>
+
+</html>

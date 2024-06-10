@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        var x = 10;
+        console.log(window.x);
+
+        let y = 20;
+        console.log(window.y)
+
+
+        /*
+        //Normal Parameter
+        function add(a,b){
+            let result = a+b;
+            console.log(result)
+        }
+
+        add(5,5);   //10
+        add();      //undefined
+        */
+
+        //Default Parameter:
+        function add(c=10,d=20){
+            let result = c+d;
+            console.log(result)
+        }
+        add(20,20);         //40
+        add();              //30
+        add(70)             //90
+        add(undefined , 70) //80
+
+    </script>
+</body>
+</html>

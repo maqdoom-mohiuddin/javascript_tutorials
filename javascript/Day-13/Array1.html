@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    name <p id="n1"></p>
+    surname <p id="n2"></p>
+    age <p id="n3"></p>
+    Addrss <p id="n4"></p>
+
+    <script>
+
+       let profile = ["raj" , "kumar" , 25, "nanded"]
+
+       console.log(profile)
+       console.log(profile[1]);
+
+       document.getElementById('n1').innerHTML = profile[0]
+       document.getElementById('n2').innerHTML = profile[1]
+       document.getElementById('n3').innerHTML = profile[2]
+       document.getElementById('n4').innerHTML = profile[3]
+
+
+        let arr = [10,20,30,40,40,50];
+        let [x,y,z,a] = arr;            //Destructuring of array es-6
+
+        console.log(arr[1]);
+        console.log(arr[2]);
+
+        arr.push("Math");
+        console.log(arr)
+        console.log(arr.length);
+        console.log(arr.indexOf('Math'));
+
+
+
+        arr2 = [10,5,44];
+        arr.concat(arr2);
+        console.log(arr)
+        
+    </script>
+</body>
+</html>

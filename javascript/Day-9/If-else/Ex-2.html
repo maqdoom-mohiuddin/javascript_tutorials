@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let hour = +prompt('Enter hour')
+        msg = " ";
+        if (hour < 18){
+            msg = 'Good Day';
+        }else{
+            msg = 'Good Evening';
+        }
+        console.log(msg);
+
+        //Output:
+        // 0-17 --> good day
+        //18    --> good evining
+        // 19-n -->  goood evining
+    </script>
+</body>
+</html>

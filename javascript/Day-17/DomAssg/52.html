@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>52</title>
+</head>
+<body>
+   <!-- //In that name/class added -->
+    <button id="btn" name="form1" style="color: brown;">Send</button>
+    <script>
+        let btnn = document.getElementById('btn');
+
+        // btnn.style.cssText = "background-color: red; color: white"
+
+        btnn.setAttribute('style' , 'color:white ; background-color: green')
+
+        btnn.style.color = "aqua"
+        btnn.style.background = "black";
+        btnn.style.cssText += "background:red ; border: 2px solid green"
+    </script>
+</body>
+</html>

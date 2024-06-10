@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Arrow Function
+        /*
+        let add = (x,y) =>x+y;
+        console.log(add(5,5))
+        */
+
+
+        // Array Destructuring
+        /*
+        function getScore (){
+            return [100,20,30,40,50]
+        }
+        // let [x,y,z,p] = getScore();
+        let [x,y,z] = getScore();
+        console.log(x,y,z,p);
+        */
+
+
+        // Object Destructuring
+        /*
+        let person = {
+            firstName : 'John',
+            lastName : 'Doe'
+        }
+        //before es6
+        // let fname = person.firstName;
+        // let lname = person.lastName;
+
+        //In es6
+        let {firstName : fname  , lastName : lname} = person;
+        console.log(fname)
+        console.log(lname)
+        */
+
+
+        //Class in es6
+        class Person{
+            constructor(fname , lname){
+                this.fname = fname
+                this.lname = lname
+            }
+        }
+        let p1 = new Person('elon' , 'musk');
+        let p2 = new Person('Mark' , 'zuk');
+
+        console.log(p1)
+        console.log(p2)
+
+
+    </script>
+</body>
+</html>

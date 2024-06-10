@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>q6</title>
+</head>
+<body>
+    
+
+    <script>
+        //Q6 write a program for creating calculator object which will have methods add,sub,multiple,mod.
+
+        let myobj = {
+            addition : "add",
+            substraction : "sub",
+            multiplication : "mul",
+            division : 'div',
+            add : function add(a1,a2){
+                let c = a1+a2;
+                return c
+            },
+            sub : function add(a1,a2){
+                let c = a1-a2;
+                return c
+            },
+            mul : function add(a1,a2){
+                let c = a1*a2;
+                return c
+            },
+            div : function add(a1,a2){
+                let c = a1/a2;
+                return c
+            }
+
+        }
+
+        console.log(myobj.add(5,5))
+        console.log(myobj.sub(5,5))
+        console.log(myobj.mul(5,5))
+        console.log(myobj.div(5,5))
+    </script>
+</body>
+</html>

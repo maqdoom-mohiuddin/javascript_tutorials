@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    
+
+    <script>
+        let p = new Promise((resolve, reject) =>{
+            let graduate = true;
+            if(graduate){
+                resolve('Purches Laptop')
+            }else{
+                reject('Purches PC')
+            }
+        })
+
+        p.then((data) =>{
+            console.log(data);
+            console.log('Lenove Laptop');
+        }).then((data) =>{
+            console.log('Ideapad');
+        })
+        .catch((data) =>{
+            console.log(data);
+            console.log('HP PC');
+        })
+        .finally ((data) =>{
+            console.log('Congratulations...');
+        })
+
+        
+    </script>
+</body>
+</html>

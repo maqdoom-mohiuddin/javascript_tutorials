@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let user = {
+            name : "sam",
+            age : 30,
+            "like birds" : true,
+            sal : 30000,
+        }
+
+        console.log(user.name);
+        console.log(user.age);
+        console.log(user["like birds"]);
+        console.log("name" in user)
+        console.log("sal" in user)
+
+
+        for (key in user){
+            console.log(user[key]);
+            console.log(key);
+        }
+
+        document.write(Math)
+    </script>
+</body>
+</html>

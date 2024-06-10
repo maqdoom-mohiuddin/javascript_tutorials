@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map data structure</title>
+</head>
+<body>
+    
+    <h1>map data structure</h1>
+    <h1>set data structure</h1>
+
+    <script>
+
+        console.log('Tut on Map(class Map)')
+        /*
+        //map data structure
+        let arr = [10,20,30,10,20,10];
+        let roles = new Map([
+            ['r1' , 'user'] , 
+            ['r2' , 'guest'] , 
+            ['r3' , 'admin']
+        ])
+
+        console.log(roles);
+        console.log(roles.get('r1'))        //user
+
+        roles.set('r4' , 'sam');
+        console.log(roles)
+        */
+
+
+        /*
+        JavaScript Map:-
+            -Map is similar to the object but a little bit advanced from the object
+            -Map key can be any data type (object can have string key only)
+            -Map has more features that don't have in object
+            -The maps has better performance than Object
+        */
+
+
+        //Normal Object:
+        let myobj = {
+            name : 'Anil',
+            10 : 'This is number key',
+            true : 'This is bool key',
+        }
+        console.log(myobj);
+        // console.log(obj.10);        //Not Possible (error)
+        console.log(myobj.true)        //This is bool key
+        //Operations:
+        console.log(myobj.key)          //undefined
+        myobj.city = 'Delhi'
+
+        //Map Object
+        let data = new Map([
+            ['name' , 'Elon'],
+            [10, 'This is number key in map'],
+            [true , 'this is bool val']
+        ])
+        console.log(data)
+        console.log(data.get(10))       //This is number key in map
+        console.log(data.get(true))     //this is bool val
+        console.log(data.keys())        //MapIterator {'name', 10, true}
+        //Operations:
+        data.set('city' , 'Noida');
+        console.log(data.get('city'))       //Noida
+        console.log(data.values())
+        //MapIterator {'Elon', 'This is number key in map', 'this is bool val', 'Noida'}
+        console.log(data.size);         //4
+        console.log(data.delete('true'))
+        console.log(data.has('name'))   //true
+
+        data.forEach((v,k) => {
+            console.log(k,v)
+        })
+        //name Elon
+        //10 'This is number key in map'
+        //true 'this is bool val'
+        //city Noida
+
+
+        
+        for (x of data){
+            // console.log(x)
+            //console.log(x[0])               // keys-> name 10 true city    
+            console.log(x[1])               // values -> elon this is bool noida
+        }
+        // (2) ['name', 'Elon']
+        // (2) [10, 'This is number key in map']
+        // (2) [true, 'this is bool val']
+        // (2) ['city', 'Noida']
+
+
+        data.set(() =>{} , 'This is arrow function type');
+        console.log(data);
+        //Map(5) {'name' => 'Elon', 10 => 'This is number key in map', true => 'this is bool val', 'city' => 'Noida', ƒ => 'This is arrow function type'}
+    </script>
+</body>
+</html>

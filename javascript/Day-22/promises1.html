@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    
+    <h1>Promises</h1>
+    <script>
+        /*
+        function sayHi(){
+            console.log('Hi...')
+        }
+        //CallBack
+        function add(x,y,callback){
+            console.log(x+y);
+            callback()
+        }
+        let a= 10;
+        let b= 30
+        add(a,b,sayHi);
+        */
+
+
+        function sayHi(){
+            console.log('Hi...')
+        }
+        function add(x,y,callback){
+            console.log(x+y);       //50 , 80
+            callback()
+        }
+        let a= 10;
+        let b= 40;
+        add(10,10,sayHi)        //31
+
+        add(a,b,() =>{
+            console.log('bye...')       //bye..
+        })
+        add(30,50, function (){
+            console.log('Good morning...')      //Good morning
+        })
+
+    </script>
+</body>
+</html>

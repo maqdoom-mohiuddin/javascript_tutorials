@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo" onmouseover="displayMsg(this)">h1</p>
+
+    <script>
+        function displayMsg(obj){
+            obj.innerHTML = 'hello'
+        }
+        function clearDate(){
+            document.getElementById('demo').innerHTML = ''
+        }
+    </script>
+    
+</body>
+</html>

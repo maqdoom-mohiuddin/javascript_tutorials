@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+
+<body>
+
+
+    <script>
+        //Q6 Write a program to find the occurrence of “@” and “.” in the following email address. email=” jack@tekisky.com” use template literal
+
+        // let email = prompt('Enter the mail');
+        let email = prompt('Enter the mail.');
+
+
+        if (email == null || email == '') {
+            console.log(`Email Requires....`);
+        }else if(email.includes('@') && email.includes('.')) {
+            console.log(`Welcome ${email}`);
+
+        }else if(!email.includes('@') && !email.includes('.')) {
+            console.log(`${email} requires '@'  & '.' as well`);
+
+        }else if(email.includes('@') && !email.includes('.')) {
+            console.log(`Dot(.) is missing Check At Once ${email}`);
+
+        }else if(email.includes('.') && !email.includes('@')) {
+            console.log(`@ is missing Check At Once ${email}`);
+
+        }else{
+            console.log(`Try Again...`);
+        }
+    </script>
+</body>
+
+</html>

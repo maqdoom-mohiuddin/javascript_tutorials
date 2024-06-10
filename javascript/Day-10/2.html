@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let age = +prompt('Enter the age')
+        let msg = '';
+
+        if(age >= 18){
+            let voterID = prompt('Have voter ID yes or no');
+            if(voterID == 'yes'){
+                msg = 'You are eligible for voting'
+            }
+            msg = 'You are eligile for voting';
+        }else{
+            msg = 'You are not eligible for voting';
+        }
+        console.log(msg)
+    </script>
+</body>
+</html>

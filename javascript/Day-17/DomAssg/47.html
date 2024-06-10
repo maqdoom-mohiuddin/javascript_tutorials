@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47</title>
+</head>
+<body>
+    
+    <ul id="menu">
+        <li>Home</li>
+        <li>product</li>
+        <li>About Us</li>
+    </ul>
+
+    <script>
+        let parent = document.getElementById('menu');
+        let elm = parent.firstElementChild;
+       elm = parent.firstElementChild.nextElementSibling;
+
+        // parent.removeChild(elm)
+
+        document.body.removeChild(parent)
+    </script>
+</body>
+</html>

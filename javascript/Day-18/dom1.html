@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="d1">
+        <h1 id="d2">Hello inside the h1 tag in html</h1>
+        <p>Hi inside the p tag in html</p>
+        <span>Hello inside the span in html</span>
+    </div>
+
+    <script>
+
+        console.log(document.getElementById('d2').parentElement);
+        console.log(document.getElementById('d1').parentElement);
+
+        let elem = document.createElement('p');
+        elem.innerHTML = 'Javascript';
+        console.log(elem);
+        document.body.appendChild(elem)
+
+
+        let x = document.createElement('h1');
+        x.innerHTML = 'New H1 Tah';
+        console.log(x);
+
+        document.getElementById('d1').appendChild(x)
+
+
+        let app = document.createElement('p');
+        app.innerHTML = 'Append Javascript in last';
+        console.log(app);
+        document.body.append(app);
+
+        let app1 = document.createElement('p');
+        app1.innerHTML = 'Append Javascript in top';
+        console.log(app1);
+        document.body.prepend(app1);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-2</title>
+</head>
+<body>
+    
+    <script>
+
+        let day = +prompt('Enter the Day');
+        let txt = "";
+        switch (day){
+            case 1:
+            case 2:
+            case 3:
+                txt = 'Working Days';
+                break;
+            case 4:
+            case 5:
+                txt= 'Soon It is Weekend'
+                break;
+            case 6:
+            case 7:
+                txt = 'Enjoy the Weekends';
+                break;
+            default:
+                txt = 'Uhh, Not a Valid Input';
+                break;
+        }
+        console.log(txt)
+    </script>
+</body>
+</html>

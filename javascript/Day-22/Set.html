@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    
+
+    <script>
+
+        console.log('Tut on Set(object)')
+
+        /*
+        Set(data structure):-
+            -Collections of unique values.It wont be alloewd dupliates. 
+            -Single Values.
+        */
+        
+        let data = new Set([10,20,30,10]);
+        console.log(data)          //Set(3) {10, 20, 30}
+        console.log(data[1]);      //Not posible in set (undefind)
+
+        data.forEach(items =>{
+            console.log(items * 10)
+        })
+        //100 200 300
+
+
+        //Operations On Set:-
+        let data1 = new Set();
+        data1.add('raj')
+        data1.add('kumar')
+        data1.add({name : 'Elon'});
+        console.log(data1)          //Set(3) {'raj', 'kumar', {…}}
+        data1.delete('raj');
+        console.log(data1)          //Set(2) {'kumar', {…}}
+
+        data1.forEach((items) =>{
+            console.log(items)
+        })
+        //Elon
+        for(x of data1){
+            console.log(x)
+        }
+        //Elon
+
+
+        //Converting array into set:
+        let arr = [10,20,30,10,40,50];
+        console.log(arr)                //(6)[10, 20, 30, 10, 40, 50]
+        arr = new Set(arr);
+        console.log(arr)                //Set(5) {10, 20, 30, 40, 50}
+
+
+
+        //Converting Set into array:
+        let data3 = new Set([20, 'abc' , 'yz' , 50]);
+        console.log(data3)          //Set(4) {20, 'abc', 'yz', 50}
+        data3 = [...data3];
+        console.log(data3)          //(4) [20, 'abc', 'yz', 50]
+
+
+
+
+    </script>
+</body>
+</html>

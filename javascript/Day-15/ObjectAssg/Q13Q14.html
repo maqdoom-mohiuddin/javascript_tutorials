@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q13 & q14</title>
+</head>
+<body>
+    
+    <script>
+        //13) Write a JavaScript program to retrieve all the values of an objects properties.
+
+        let myBook = {
+            book_Name : 'Math',
+            book_Pages : 1024,
+            book_price : 999,
+            book_pub : 'Rakesh Divan',
+            book_weight : '0.5kg'
+        }
+        for (book in myBook){
+            console.log(myBook[book])
+        }
+
+        //14) Write a JavaScript program to retrieve all the keys of an object properties.
+
+        let newBook = {
+            book_Name : 'Math',
+            book_Pages : 1024,
+            book_price : 999,
+            book_pub : 'Rakesh Divan',
+            book_weight : '0.5kg'
+        }
+        for (valBook in newBook){
+            console.log(valBook)
+        }
+    </script>
+</body>
+</html>

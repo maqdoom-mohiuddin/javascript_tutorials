@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else-If</title>
+</head>
+<body>
+    
+
+    <script>
+         let time = +prompt('Enter a Valid time')
+         let msg = '';
+
+         if(time < 10){
+            msg = 'Good Morning';
+         }else if(time < 20){;
+            msg = 'Good Day';
+         }else{
+            msg = 'Good Evining'
+         }
+         console.log(msg);
+
+         //Output:
+         // 0-9   --> Good Morning
+         // 10-19 --> Good Day
+         // 20-n  --> Good Evining
+        
+    </script>
+</body>
+</html>

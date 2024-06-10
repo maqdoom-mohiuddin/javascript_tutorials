@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q17</title>
+</head>
+<body>
+    
+
+    <script>
+        //Q17 explain call back hell with example
+
+        let sayHi = () =>{
+            console.log('Hi....')
+        }
+        let add = (a,b, callb) =>{
+            let result = a+b;
+            console.log(result);
+            callb()
+        }
+
+        add(50,50,sayHi);
+        let x = 100;
+        let y = 100;
+        add(x,y,sayHi)
+    </script>
+</body>
+</html>,

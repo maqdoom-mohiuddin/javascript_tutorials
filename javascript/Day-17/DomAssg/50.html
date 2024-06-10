@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50</title>
+</head>
+<body>
+    
+
+    <divg id="intro">      <!-- //selected-->
+        <!-- after begin -->
+        <h2>Heading</h2>
+        <p>This is p tag</p>
+        <!-- before end  -->
+    </div>
+
+
+    <script>
+        let elem = document.getElementById('intro');
+
+        let html = "<h1>New h1</h1>"
+        elem.insertAdjacentHTML('beforebegin' , html)
+        elem.insertAdjacentHTML('beforeend' , html)
+    </script>
+</body>
+</html>

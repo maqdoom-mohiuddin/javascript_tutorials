@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+<body>
+    
+    <h2>CallBack Function</h2>
+    <script>
+        let display = () =>{
+            console.log("hello !");
+        }
+
+        console.log("one");
+        setInterval(display, 3000); //Afte 3 sec it will display
+        console.log("two");
+
+
+
+        let add = (a,b) => {
+            return a+b;
+        }
+        let divide = (a,b) =>{
+            return a/b;
+        }
+        let calculate = (x,y,operation) =>{
+            return operation(x,y);
+        }
+        console.log(calculate (2,2,add));   //4
+        console.log(calculate(4,4,divide));  //1
+
+
+
+
+
+    </script>
+</body>
+</html>
